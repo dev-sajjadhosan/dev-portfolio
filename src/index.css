@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Dancing+Script:wght@400..700&family=Itim&family=Lemonada:wght@300..700&family=Merienda:wght@300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import 'tailwindcss';
+@plugin "daisyui";
+
+* {
+  /* font-family: 'Space Mono', monospace; */
+  font-family: "Itim", cursive;
+}
+body {
+  background: #222222 !important;
+}
+/* In your styles.css or global CSS */
+.clip_cone {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+  z-index: 1;
+}
+.clip_cone_2 {
+  clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+  z-index: 1;
+}
+
+.dancing {
+  font-family: 'Dancing Script', cursive;
+}
+.amita {
+  font-family: "Amita", serif;
+}
