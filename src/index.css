@@ -4,10 +4,11 @@
 
 * {
   /* font-family: 'Space Mono', monospace; */
-  font-family: "Itim", cursive;
+  font-family: 'Itim', cursive;
 }
 body {
-  background: #222222 !important;
+  background: #222831;
+  min-height: 100vh;
 }
 /* In your styles.css or global CSS */
 .clip_cone {
@@ -23,5 +24,5 @@ body {
   font-family: 'Dancing Script', cursive;
 }
 .amita {
-  font-family: "Amita", serif;
+  font-family: 'Amita', serif;
 }
