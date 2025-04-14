@@ -1,10 +1,16 @@
-import React, { createContext, ReactNode, useState } from 'react'
+import { createContext, ReactNode, useState } from 'react'
 
 type AuthContextType = {
   toggleDock: boolean
   setToggleDock: (value: boolean) => void
 }
-export const AuthContext = createContext({})
+
+const defaultAuth: AuthContextType = {
+  toggleDock: false,
+  setToggleDock: () => {},
+}
+
+export const AuthContext = createContext<AuthContextType>(defaultAuth)
 
 const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [toggleDock, setToggleDock] = useState<boolean>(false)

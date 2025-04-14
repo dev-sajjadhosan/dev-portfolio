@@ -1,7 +1,5 @@
-
 import {
   GoGlobe,
-
   GoPaperclip,
   GoPerson,
   GoRelFilePath,
@@ -10,7 +8,6 @@ import {
 } from 'react-icons/go'
 import { Link } from 'react-router-dom'
 import useAuth from '../../hooks/useAuth'
-
 
 const dockObject = [
   {
@@ -51,7 +48,7 @@ const dockObject = [
   },
 ]
 
-const Dock= () => {
+const Dock = () => {
   const { toggleDock } = useAuth()
   console.log(toggleDock)
   return (

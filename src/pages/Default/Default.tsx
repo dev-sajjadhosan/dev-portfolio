@@ -31,6 +31,7 @@ const Socials = [
 
 const DefaultPage = () => {
   const [showNoti, setShowNoti] = useState(false)
+  const { toggleDock, setToggleDock } = useAuth()
   return (
     <>
       {showNoti && (
@@ -41,8 +42,8 @@ const DefaultPage = () => {
         />
       )}
       {/* ------------------------- */}
-      <div className="w-[30rem] lg:w-2xl bg-[#31363F] h-[22rem] lg:h-screen fixed right-0 -z-10 clip_cone drop-shadow-lg"></div>
-      <div className="w-[30rem] lg:w-2xl bg-[#31363F] h-[22rem] lg:h-screen fixed left-0 bottom-0 -z-10 clip_cone_2 drop-shadow-lg"></div>
+      {/* <div className="w-[30rem] lg:w-2xl bg-[#31363F] h-[22rem] lg:h-screen fixed right-0 -z-10 clip_cone drop-shadow-lg"></div> */}
+      {/* <div className="w-[30rem] lg:w-2xl bg-[#31363F] h-[22rem] lg:h-screen fixed left-0 bottom-0 -z-10 clip_cone_2 drop-shadow-lg"></div> */}
       {/* ------------------- */}
       <div className="flex min-h-screen justify-center items-center p-10 mb-18 lg:mb-0">
         <div className="card justify-between lg:bg-[#76ABAE] lg:text-black rounded-2xl lg:py-10 lg:px-14 w-[99%] lg:w-[90%] lg:h-[35rem] relative z-10">
